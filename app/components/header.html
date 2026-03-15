@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>start shop</title>
+  <title>gribenyuk</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons.png">
+  <link rel="manifest" href="favic.webmanifest">
+
 </head>
 
 <body>
-
- 
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__btn">
+            <svg width="30" height="18">
+              <use xlink:href="images/sprite.svg#mobile-btn"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/">
+            <svg class="header__logo-svg" width="244" height="28">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#about-me">Про мене</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#portfolio">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#development-process">Процес розробки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#price">Прайс</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#questions">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__elements">
+            <ul class="header__lang">
+              <li class="header__lang-item">
+                <a class="header__lang-link header__lang--active" href="#">UA</a>/
+              </li>
+              <li class="header__lang-item">
+                <a class="header__lang-link" href="#">EN</a>
+              </li>
+            </ul>
+            <a class="header__telephone" href="tel:+380999081536">
+              <svg class="header__icon-phone" width="17" height="16">
+                <use xlink:href="images/sprite.svg#phone"></use>
+              </svg>
+              +38(099)-908-15-36
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
