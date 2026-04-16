@@ -27,7 +27,8 @@ picture {
   display: block;
 }
 
-ul,ol {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -48,8 +49,8 @@ select {
   outline: transparent;
 }
 
-button{
-  appearance:none;
+button {
+  appearance: none;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -57,7 +58,7 @@ button{
   border-radius: 0;
 }
 
-address{
+address {
   font-style: normal;
 }
 

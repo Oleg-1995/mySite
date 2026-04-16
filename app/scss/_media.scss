@@ -1,3 +1,10 @@
+@media (max-width: 1460px) {
+
+  .development-process__steps-item::after {
+    display: none;
+  }
+}
+
 @media (max-width: 1330px) {
 
   .about-me__content {
@@ -41,6 +48,10 @@
   .about-me__text {
     font-size: 16px;
     line-height: 1.8;
+  }
+
+  .modal-success__content {
+    padding: 180px 230px;
   }
 }
 
@@ -124,6 +135,17 @@
   .about-me__title {
     font-size: 36px;
   }
+
+  .error-404__title {
+    font-size: 240px;
+  }
+
+  .error-404__text,
+  .error-404__link {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -138,9 +160,32 @@
     gap: 20px;
   }
 
+  .modal-success__content {
+    padding: 130px 130px;
+  }
+}
+
+@media (max-width: 895px) {
+  .consultation__content-img {
+    display: none;
+  }
+
+  .consultation__content {
+    padding: 65px 70px;
+  }
+
+  .consultation__text {
+    font-size: 16px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 790px) {
+
+  .hero {
+    padding-top: 200px;
+  }
 
   .hero__title {
     font-size: 50px;
@@ -164,6 +209,74 @@
     font-size: 18px;
   }
 
+  .portfolio__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .development-process__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .development-process__step-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .development-process__step-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .development-process__title {
+    font-size: 34px;
+  }
+
+  .development-process__item-content,
+  .development-process__item-text {
+    font-size: 14px;
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+
+  .development-process__steps-panel {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .development-process__step-text {
+    max-width: 580px;
+  }
+
+  .questions__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .questions__accordion-head {
+    font-size: 20px;
+  }
+
+  .questions__accordion-text {
+    font-size: 16px;
+  }
+
+  .questions__accordion-item {
+    font-size: 14px;
+  }
+
+  .questions__accordion-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .questions__accordion-item::before {
+    width: 6px;
+    height: 6px;
+    margin: 10px 0px 0px -16px;
+  }
+
   .footer {
     font-size: 14px;
   }
@@ -173,6 +286,61 @@
     align-items: center;
     text-align: center;
     gap: 20px;
+  }
+
+  .development-process__steps-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .price__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .price__content-title {
+    margin: 30px 0;
+    font-size: 28px;
+  }
+
+  .price__content-item {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .price__content-service-cost {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .consultation__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .consultation__text {
+    max-width: 275px;
+  }
+
+  .modal__text {
+    max-width: 420px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .modal-success__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .modal-success__text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .modal-success__content {
+    padding: 80px 80px;
   }
 }
 
@@ -198,7 +366,103 @@
 
   .about-me__title {
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+  }
+
+  .price__note {
+    font-size: 20px;
+  }
+
+  .price__title {
+    font-size: 34px;
+  }
+
+  .questions__title {
+    font-size: 28px;
+  }
+
+  .consultation__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .consultation__content {
+    padding: 40px 30px;
+  }
+
+  .modal__text {
+    max-width: 355px;
+    margin-bottom: 26px;
+    font-size: 14px;
+  }
+
+  .modal__title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  .modal-success__del {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .modal__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    gap: 14px 52px;
+    justify-content: center;
+  }
+
+  .modal__content {
+    padding: 30px 5px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .modal__text {
+    max-width: 324px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .modal__link {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  .error-404__title {
+    font-size: 150px;
+  }
+
+  .error-404__text,
+  .error-404__link {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+
+  .modal-success__content {
+    padding: 100px 20px;
+  }
+
+  .modal-success__title {
+    font-size: 28px;
+  }
+
+  .modal-success__text {
+    font-size: 14px;
+  }
+
+  .modal-success__icon-svg {
+    margin-bottom: 36px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -213,6 +477,18 @@
     line-height: 1.9;
   }
 
+  .about-me {
+    padding: 60px 0 30px;
+  }
+
+  .consultation__text {
+    font-size: 14px;
+  }
+
+  .portfolio {
+    padding: 30px 0 30px;
+  }
+
   .portfolio__card-button {
     padding: 10px 35px;
     font-size: 12px;
@@ -222,13 +498,90 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
+  .development-process__title {
+    font-size: 28px;
+  }
+
+  .price__content-title {
+    margin: 25px 0;
+    font-size: 22px;
+  }
+
+  .questions {
+    padding: 30px 0;
+  }
+
+  .questions__accordion-head {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .questions__accordion-text {
+    font-size: 14px;
+  }
+
+  .consultation {
+    padding: 30px 0 90px 0;
+  }
+
+  .portfolio__title {
+    font-size: 28px;
+  }
+
+  .error-404__svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 420px) {
 
+  .header {
+    font-size: 12px;
+  }
+
+  .header__logo-svg {
+    width: 137px;
+    height: 30px;
+  }
+
   .hero__elements {
-
     flex-direction: column;
+  }
 
+  .development-process__steps-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .development-process__steps-label {
+    font-size: 16px;
+  }
+
+  .price__content-title {
+    margin: 25px 0;
+  }
+
+  .price__content-item {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .price__content-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .price__note {
+    font-size: 18px;
+  }
+
+  .consultation__title {
+    font-size: 26px;
+  }
+
+  .price__title {
+    font-size: 26px;
   }
 }

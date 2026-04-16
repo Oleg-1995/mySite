@@ -3,24 +3,62 @@ const menu = document.querySelector('.menu');
 const headerElements = document.querySelector('.header__elements');
 const headerBtn = document.querySelector('.header__btn');
 
+// Перемещение языка
 function moveLang() {
   if (window.innerWidth <= 1020) {
-    if (!menu.contains(lang)) {
-      menu.append(lang);
-    }
+    if (!menu.contains(lang)) menu.append(lang);
   } else {
-    if (!headerElements.contains(lang)) {
-      headerElements.prepend(lang);
-    }
+    if (!headerElements.contains(lang)) headerElements.prepend(lang);
   }
 }
 
 window.addEventListener('load', moveLang);
 window.addEventListener('resize', moveLang);
 
+// --- Мобильное меню ---
+const menuLinks = menu.querySelectorAll('a'); // все ссылки меню
+
+function openMenu() {
+  menu.classList.add('menu--active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+  menu.classList.remove('menu--active');
+  document.body.style.overflow = '';
+}
+
+// Кнопка бургер
 headerBtn.addEventListener('click', () => {
-  menu.classList.toggle('menu--active');
+  if (menu.classList.contains('menu--active')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
 });
+
+// Закрытие меню при клике на пункт
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+// Добавляем класс при загрузке страницы, считаем, что пользователь мышью
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('using-mouse');
+  });
+
+  // Клик мышью — остаёмся в режиме "мышь"
+  document.addEventListener('mousedown', () => {
+    document.body.classList.add('using-mouse');
+  });
+
+  // Нажатие Tab — включаем режим клавиатуры
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      document.body.classList.remove('using-mouse');
+    }
+  });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const reveals = document.querySelectorAll(".reveal");
